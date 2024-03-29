@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/project.png" />
+    <title>Short Projects | Afrid</title>
+  </head>
+  <body id="top">
+
+    <!------------navbar--------->
+    <header>
+      <nav class="navigation-bar">
+        <h1>Short <span>Project</span></h1>
+        <div class="nav-content">
+          <div class="nav-list">
+              <div class="default-list">
+                <a href="#top" class="nav-item">Home</a>
+                <a href="#quiz-sec" class="nav-item">Quiz App</a>
+                <a href="#to-do-sec" class="nav-item">To do App</a>
+                <a href="#download-sec" class="nav-item">Downloader</a>
+                <a href="#load-sec" class="nav-item">Load Content</a>
+                <button class="toggle-icon">
+                  <i class="fi fi-rr-menu-burger"></i>
+                </button>
+                <div class="nav-line"></div>
+              </div>
+              <div class="toggle-list">
+                <div class="desktop-menu">
+                  <a href="#top" class="nav-item">Home</a>
+                  <a href="#quiz-sec" class="nav-item">Quiz App</a>
+                  <a href="#to-do-sec" class="nav-item">To do App</a>
+                  <a href="#download-sec" class="nav-item">Downloader</a>
+                  <a href="#load-sec" class="nav-item">Load Content</a>
+                </div>
+                <a href="#slider-sec" class="nav-item">Slider</a>
+                <a href="#review" class="nav-item">Draggable Slider</a>
+                <a href="#texttospeech-sec" class="nav-item">Text to speech</a>
+                <a href="#search-engine" class="nav-item">Image Serach Engine</a>
+                <a href="#magnifier-sec" class="nav-item">Image Magnifier</a>
+                <a href="#preview-sec" class="nav-item">Image Previewer</a>
+                <a href="#resize-sec" class="nav-item">Resize & Compress</a>
+                <a href="#save-text-sec" class="nav-item">Save Text as File</a>
+                <a href="#custom-select-sec" class="nav-item">Custom Select Menu</a>
+                <a href="#auto-sec" class="nav-item">Autocomplete Search Box</a>
+                <a href="#internet-sec" class="nav-item">Internet Check</a>
+                <a href="#pass-sec" class="nav-item">Random Password Generator</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-----------slider----------->
+    <section class="slider-div" id="slider-sec">
+      <div class="slider">
+        <i class="fi fi-rs-angle-left" id="prev" data-left-angle></i>
+        <div class="slides">
+            <div class="slide first" data-first-slider>
+                <img src="./images/card-banner-1.JPG" alt="banner_1">
+            </div>
+            <div class="slide second" data-second-slider>
+                <img src="./images/card-banner-2.png" alt="banner_2">
+            </div>
+            <div class="slide third" data-third-slider>
+                <img src="./images/card-banner-3.jpg" alt="banner_3">
+            </div>
+        </div>
+        <!-------------manual navigation------------>
+        <div class="dots">
+            <div class="manual-btn active"></div>
+            <div class="manual-btn"></div>
+            <div class="manual-btn"></div>
+        </div>
+        <!------x------manual navigation------x----->
+        <i class="fi fi-rs-angle-right" id="next" data-right-angle></i>
+      </div>
+    </section>
+
+    <!-----------parallax-------->
+    <section class="parallax-div">
+      <div class="container">
+        <h2 class="object" data-val="5">Parallax</h2>
+        <img
+          src="./images/parallax/1.png"
+          data-val="4"
+          alt="image"
+          class="object one"
+        />
+        <img
+          src="./images/parallax/2.png"
+          data-val="6"
+          alt="image"
+          class="object two"
+        />
+        <img
+          src="./images/parallax/3.png"
+          data-val="8"
+          alt="image"
+          class="object three"
+        />
+        <img
+          src="./images/parallax/4.png"
+          data-val="4"
+          alt="image"
+          class="object four"
+        />
+        <img
+          src="./images/parallax/5.png"
+          data-val="6"
+          alt="image"
+          class="object five"
+        />
+        <img
+          src="./images/parallax/6.png"
+          data-val="8"
+          alt="image"
+          class="object six"
+        />
+      </div>
+    </section>
+
+    <!---------------quiz-app------------->
+    <section class="quiz-div" id="quiz-sec">
+      <div class="quiz-container">
+        <h1>ইসলামিক <span>কুইজ</span> (২০২৪)</h1>
+        <div class="quiz-box">
+          <h2 id="question"></h2>
+          <ul id="answer-btns">
+            <li id="ans-btn1"></li>
+            <li id="ans-btn2"></li>
+            <li id="ans-btn3"></li>
+            <li id="ans-btn4"></li>
+          </ul>
+          <button class="ans-submit"></button>
+        </div>
+      </div>
+    </section>
+
+    <!---------------carousel-wrapper--------->
+    <section class="review section" id="review">
+      <div class="container">
+          <h2 class="section-title">Reviews</h2>
+          <div class="review-wrapper" data-review-wrapper>
+              <ul class="carousel" data-review-carousel>
+                  <li class="review-card" data-review-card>
+                      <div class="review-desc">
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>I love the website designed by Afrid, he has creativity in designing new designs and he is good at it. Best wishes, Keep it up!</p>
+                      </div>
+                      <div class="review-bottom">
+                          <div class="person-desc">
+                              <a href="https://www.facebook.com/profile.php?id=100078713332796" target="_blank"><h3>Aminul Islam</h3></a>
+                              <p>Student</p>
+                          </div>
+                          <div class="review-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </li>
+
+                  <li class="review-card" data-review-card>
+                      <div class="review-desc">
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>He is a good Designer. He has created a Responsive Website for me with in a few days. I really like his work. </p>
+                      </div>
+                      <div class="review-bottom">
+                          <div class="person-desc">
+                              <a href="https://www.facebook.com/ishtiaq.sunny.12" target="_blank"><h3>Ishtiaq Sunny</h3></a>
+                              <p>Student</p>
+                          </div>
+                          <div class="review-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </li>
+
+                  <li class="review-card" data-review-card>
+                      <div class="review-desc">
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>He is very good at what he is doing. I like his work. Especially the unique point of view of designing.</p>
+                      </div>
+                      <div class="review-bottom">
+                          <div class="person-desc">
+                              <a href="https://www.facebook.com/mh.abdullah.50767" target="_blank"><h3>Mohammad Abdullah</h3></a>
+                              <p>Student</p>
+                          </div>
+                          <div class="review-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </li>
+
+                  <li class="review-card" data-review-card>
+                      <div class="review-desc">
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>Amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing.</p>
+                      </div>
+                      <div class="review-bottom">
+                          <div class="person-desc">
+                              <a href="https://www.facebook.com/profile.php?id=61551928477815" target="_blank"><h3>Tarequl Islam</h3></a>
+                              <p>Student</p>
+                          </div>
+                          <div class="review-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </section>
+
+    <!--------------text-to-speech-------->
+    <section class="text-speech-div" id="texttospeech-sec">
+      <div class="text-speech-container">
+        <h1>Text To <span>Speech</span> Converter</h1>
+        <div class="text-speech-content">
+          <textarea
+            class="speech-text"
+            placeholder="Enter any text here..."
+          ></textarea>
+          <div class="speech-row">
+            <select></select>
+            <button class="listen">
+              Listen <i class="fi fi-rr-waveform-path"></i>
+            </button>
+            <!-- <button class="download">Download <i class="fi fi-rr-download"></i></button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------image-search-engine------>
+    <section class="img-search-div" id="search-engine">
+      <h1>Image <span>Serach</span> Engine</h1>
+      <div class="img-form-content">
+        <form id="img-search-form">
+          <input type="text" autocomplete="off" id="img-search-field" placeholder="Search any image here..."/>
+          <button id="search-img">Search <i class="fi fi-rr-search"></i></button>
+        </form>
+        <p class="img-search-text">
+          <a></a>
+        </p>
+      </div>
+      <div id="img-search-result">
+      </div>
+      <button id="load-more-img">
+        Load more <i class="fi fi-rr-refresh"></i>
+      </button>
+    </section>
+
+    <!-------------to-do-list------------->
+    <section class="to-do-div" id="to-do-sec">
+      <div class="todo-app">
+        <h1>To-do <span>App</span> <i class="fi fi-rr-completed"></i></h1>
+        <form class="todo-form">
+          <input type="text" id="todo-Input" placeholder="Enter your task..." required>
+          <input type="submit" id="todo-btn" value="Add Task"></input>
+        </form>
+        <ul class="todo-container">
+        </ul>
+      </div>
+    </section>
+
+    <!--------------image magnifier------->
+    <section class="magnifier-div" id="magnifier-sec">
+      <h1>Image <span>Magnifier</span></h1>
+      <div class="magnify-container">
+        <img src="./images/car.jpg" id="car-img">
+      </div>
+    </section>
+
+    <!--------------image-preview--------->
+    <section class="img-preview-div" id="preview-sec">
+      <h1>Image <span>Previewer</span></h1>
+      <div class="img-preview-container">
+        <label for="file" class="img-preview-wrapper">
+          <div class="img-preview">
+            <img src="">
+          </div>
+          <div class="img-preview-content">
+            <img src="./images/upload.png">
+            <p>Drag & Drop here
+              <br>
+              or <br>
+              click here to choose an image!
+            </p>
+          </div>
+        </label>
+        <div class="img-name">
+        </div>
+        <input type="file" id="file" accept="image/*" class="default-file-btn" hidden>
+        <button class="custom-file-btn">Choose an image</button>
+      </div>
+    </section>
+
+    <!---------------image-resizer-------->
+    <section class="img-resizer-div" id="resize-sec">
+      <h1>Image <span>Resize & Compress</span></h1>
+      <div class="img-rsz-wrapper">
+        <div class="upload-box">
+          <input type="file" accept="image/*" hidden>
+          <img src="./images/upload.png" width="60">
+          <p>Browse File to Upload</p>
+        </div>
+        <div class="img-content">
+          <div class="row img-sizes">
+            <div class="column img-width">
+              <label>Width</label>
+              <input type="number" name="number">
+            </div>
+            <div class="column img-height">
+              <label>Height</label>
+              <input type="number" name="number"></div>
+          </div>
+          <div class="row img-checkbox">
+            <div class="column img-ratio">
+              <input type="checkbox" id="ratio-check" name="checkbox" checked>
+              <label for="ratio-check">Lock Image Ratio</label>
+            </div>
+            <div class="column img-quality">
+              <input type="checkbox" id="quality-check" name="checkbox">
+              <label for="quality-check">Reduce Quality</label>
+          </div>
+        </div>
+        <button class="img-download-btn">Download Image</button>
+      </div>
+    </section>
+
+    <!--------------file-downloader------->
+    <section class="file-download-div" id="download-sec">
+      <div class="file-download-container">
+        <h1>File <span>Downloader</span></h1>
+        <p>Paste the url of videos, images and pdf to Download.</p>
+        <form class="file-input-form">
+          <input type="url" class="url-input" placeholder="Paste the url..." required>
+          <button class="url-down-btn">Download File</button>
+        </form>
+      </div>
+    </section>
+
+    <!-----------save-text-as-file-------->
+    <section class="saveText-div" id="save-text-sec">
+      <h1>Save <span>Text</span>  as <span>File</span></h1>
+      <div class="save-text-container">
+        <textarea required placeholder="Enter your text..."></textarea>
+        <div class="save-options">
+          <div class="row file-name">
+            <label>File Name</label>
+            <input type="text">
+          </div>
+          <div class="row file-options">
+            <label>Save As</label>
+            <select>
+              <option value="text/plain">Text File (.txt)</option>
+              <option value="text/javascript">JavaScript File (.js)</option>
+              <option value="text/html">HTML File (.html)</option>
+              <option value="application/msword">Doc File (.doc)</option>
+              <option value="image/svg+xml">SVG File (.svg)</option>
+            </select>
+          </div>
+        </div>
+        <button class="text-Down-btn">Save As Text File</button>
+      </div>
+    </section>
+
+    <!-----------custom-selection--------->
+    <section class="select-div" id="custom-select-sec">
+      <h1>Custom <span>Select Menu</span></h1>
+      <div class="select-menu-container">
+        <div class="select-btn">
+          <p>Select Counties</p>
+          <i>&downarrow;</i>
+        </div>
+
+        <div class="select-menu">
+          <div class="serach-menu">
+            <input type="text" placeholder="Search country...">
+          </div>
+          <ul class="menu-options">
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!----------autocomplete-search------->
+    <section class="autocomplete-div" id="auto-sec">
+      <h1>Autocomplete <span>Search Box</span></h1>
+      <div class="autocomplete-container">
+        <div class="auto-search-box">
+          <input type="text" class="auto-search-field" placeholder="Search Anything...">
+          <button>Search</button>
+        </div>
+        <ul class="result-box">
+        </ul>
+      </div>
+    </section>
+
+    <!-----------load-more-content-------->
+    <section class="loadmore-div" id="load-sec">
+      <h1>Load More <span>Content</span></h1>
+      <div class="load-container">
+        <ul class="loading-content">
+          <li class="content">
+            <h2>Content 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+          <li class="content">
+            <h2>Content 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+          <li class="content">
+            <h2>Content 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+          <li class="content">
+            <h2>Content 4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+          <li class="content">
+            <h2>Content 5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+          <li class="content">
+            <h2>Content 6</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nisi molestiae, distinctio provident sit et?</p>
+          </li>
+        </ul>
+        <div class="btn-loading">
+          <a href="#" class="load-more">
+            Load More
+            <span class="loader">
+              <span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!------------internet-connection----->
+    <section class="internet-div" id="internet-sec">
+      <div class="network">
+        <div class="network-icon">
+          <i></i>
+        </div>
+        <div class="network-description">
+          <h2 class="network-title"></h2>
+          <p class="network-desc"></p>
+          <button class="reconnect">Reconnect Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!----------password generator-------->
+    <section class="password-sec" id="pass-sec">
+      <div class="container">
+        <h1 class="generate-header">
+          Random <span class="dodgerblue">Password</span> Generator
+        </h1>
+        <div class="generate-container">
+          <div class="generate-content">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Password"
+              required
+              class="generate-input-text"
+            />
+            <div class="copy-icon">
+              <i class="fi fi-rr-copy-alt"></i>
+            </div>
+          </div>
+          <button class="generate-btn">
+            Generate <i class="fi fi-rr-bolt"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
